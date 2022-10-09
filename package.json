@@ -1,0 +1,23 @@
+{
+  "name": "rollup-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "rollup": "npx rollup -i main.js --file dist.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NetCloud2017/rollup-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NetCloud2017/rollup-test/issues"
+  },
+  "homepage": "https://github.com/NetCloud2017/rollup-test#readme",
+  "devDependencies": {
+    "rollup": "^2.79.1"
+  }
+}
