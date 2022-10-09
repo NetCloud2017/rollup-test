@@ -17,23 +17,31 @@ export default [
     // 不打包到一起。
     external: ["react"],
     plugins,
-    output: {
-      file: "dist/index.umd.js",
-      format: "umd",
-      name: "Index",
-      plugins: outputPlugins,
-      //   放在打包文件开头的 一段话， 用于宣传 、 说明等。
-      banner: " /*** this project is my excise rollup project ***/",
-    },
+    output: [
+      {
+        format: "es",
+        file: "dist/index.es.js",
+        plugins: outputPlugins,
+      },
+
+      {
+        file: "dist/index.umd.js",
+        format: "umd",
+        name: "Index",
+        plugins: outputPlugins,
+        //   放在打包文件开头的 一段话， 用于宣传 、 说明等。
+        banner: " /*** this project is my excise rollup project ***/",
+      },
+    ],
   },
-  {
-    input: "./main.js",
-    external: ["react"],
-    plugins,
-    output: {
-      format: "es",
-      file: "dist/index.es.js",
-      plugins: outputPlugins,
-    },
-  },
+  //   {
+  //     input: "./main.js",
+  //     external: ["react"],
+  //     plugins,
+  //     output: {
+  //       format: "es",
+  //       file: "dist/index.es.js",
+  //       plugins: outputPlugins,
+  //     },
+  //   },
 ];
