@@ -4,7 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "rollup": "npx rollup -i main.js --file dist.js"
+    "rollup": "npx rollup -i main.js --file dist.js",
+    "upconfig": "npx rollup -c ./rollup.config.js"
   },
   "repository": {
     "type": "git",
