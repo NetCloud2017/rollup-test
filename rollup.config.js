@@ -9,7 +9,7 @@ const plugins = [resolve(), commonjs(), json()];
 
 import { terser } from "rollup-plugin-terser";
 // 输出的第三方使用的 插件很少， 一般是压缩， 等。
-const outputPlugins = [terser()];
+const outputPlugins = []; //[terser()];
 
 export default [
   {
@@ -22,6 +22,8 @@ export default [
       format: "umd",
       name: "Index",
       plugins: outputPlugins,
+      //   放在打包文件开头的 一段话， 用于宣传 、 说明等。
+      banner: " /*** this project is my excise rollup project ***/",
     },
   },
   {
