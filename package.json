@@ -5,7 +5,8 @@
   "main": "main.js",
   "scripts": {
     "rollup": "npx rollup -i main.js --file dist.js",
-    "upconfig": "npx rollup -c ./rollup.config.js"
+    "upconfig": "npx rollup -c ./rollup.config.js",
+    "env": "npx rollup -c ./rollup.config.js  --environment TEST:123"
   },
   "repository": {
     "type": "git",

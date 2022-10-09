@@ -1,3 +1,4 @@
+console.log(process.env.TEST);
 export default {
   input: "./main.js",
   output: {
